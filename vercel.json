@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
+  "routes": [
+    { "src": "/server/index.js", "dest": "/server/index.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
